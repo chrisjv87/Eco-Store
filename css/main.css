@@ -8,7 +8,9 @@ body {
 nav {
   width: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: #7C6A0a;
   padding: 15px;
 }
@@ -28,15 +30,19 @@ nav .icons button {
 article {
   width: auto;
   color: #7C6A0a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 70px;
-  display: flex;
-  justify-content: space-between;
 }
 article .impact-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
   padding-top: 50px;
   gap: 25px;
 }
@@ -49,10 +55,13 @@ article p {
   font-size: 1.5em;
 }
 article button {
+  background: none;
+  border-style: none;
+}
+article button {
   width: 12vw;
   padding: 20px;
   background-color: #FA9500;
-  border-style: none;
   border-radius: 35px;
   color: white;
   font-size: 1em;
@@ -80,11 +89,12 @@ section .healthcare h2, section .furniture h2 {
 }
 section .healthcare .card-section, section .furniture .card-section {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: auto;
   height: auto;
-  justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
   -moz-column-gap: 100px;
        column-gap: 100px;
   row-gap: 80px;
@@ -126,6 +136,33 @@ section .furniture .product-card {
   color: white;
 }
 
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.about-us .mision-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .mision-section .earth, .about-us .mision-section .innovation {
+  width: 30vw;
+  display: flex;
+  gap: 40px;
+  color: #E86424;
+}
+.about-us .mision-section .earth img, .about-us .mision-section .innovation img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-us .mision-section .earth p, .about-us .mision-section .innovation p {
+  text-align: center;
+  font-size: 1.5em;
+}
 footer {
   background-color: #FA9500;
   width: 100%;
