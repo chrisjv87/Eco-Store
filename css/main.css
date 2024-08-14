@@ -66,6 +66,9 @@ article button {
   color: white;
   font-size: 1em;
 }
+article button:hover {
+  transform: scale(1.1);
+}
 article img {
   width: 25vw;
   border-radius: 19px;
@@ -143,26 +146,49 @@ section .furniture .product-card {
   font-weight: bold;
   padding-bottom: 60px;
 }
-.about-us .mision-section {
+.about-us .mission-section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-.about-us .mision-section .earth, .about-us .mision-section .innovation {
+.about-us .mission-section .earth, .about-us .mission-section .innovation {
   width: 30vw;
   display: flex;
   gap: 40px;
   color: #E86424;
 }
-.about-us .mision-section .earth img, .about-us .mision-section .innovation img {
+.about-us .mission-section .earth img, .about-us .mission-section .innovation img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.about-us .mision-section .earth p, .about-us .mision-section .innovation p {
+.about-us .mission-section .earth p, .about-us .mission-section .innovation p {
   text-align: center;
   font-size: 1.5em;
 }
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+  border-radius: 16px;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;
