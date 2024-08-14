@@ -174,10 +174,11 @@ section {
         @include flexCenter(row, space-evenly, center);
 
         .earth {
+            $text-color: #E86424;
             width: 30vw;
             display: flex;
             gap: 40px;
-            color: #E86424;
+            color: $text-color;
             
             img {
                 object-fit: contain;
@@ -218,8 +219,36 @@ section {
     }
 }
 
+.location {
+    $text-color: #E86424;
+    color: $text-color;
+
+    h2 {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+    .map {
+        @include flexCenter(row, center, center);
+
+        padding-bottom: 50px;
+    }
+
+    h3, p {
+        font-size: $paragraph-size;
+    }
+}
+
 footer {
     background-color: $quaternary-color;
     width: 100%;
-    height: 250px;
+    height: auto;
+    padding: 40px;
+    color: white;
+
+    .social-media {
+        @include flexCenter(row, center, center);
+        gap: 40px;
+        padding-bottom: 40px;        
+    }
 }
